@@ -4,12 +4,16 @@
     padding: 0;
 }
 
+body {
+    background-color: #E2E7EA;
+}
+
 /* CONTAINER */
 header {
-    background-image: url('/Momentum-master/images/bg.jpg');
+    background-image: url('/images/bg.jpg');
     color: white;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
     min-height: 300px;
 }
@@ -59,25 +63,103 @@ main {
     margin: 10px 0 10px 0;
 }
 
+.interest {
+    /* text-align: center; */
+    padding-bottom: 1em;
+}
+
 /* FORM SECTION */
 form {
     margin-top: 20px;
-    border: 1px solid red;
+    background-color: white;
 }
 
 fieldset {
     padding: 1em;
     margin: auto;
     width: 50%;
-    border: 1px solid gold;
+    border: none;
 }
 
 input[type='text'], input[type='email'] {
     margin-bottom: 1em;
     width: 100%;
+    padding: .5em 0;
+    border: 1px solid black;
+    box-shadow: 0px 5px #e8e8eb;
 }
 
 input[type='button'] {
-    padding: 2em 5em;
-    
+    padding: 1em 1em;
+    background-color: #6C90E9;
+    color: white;
+    letter-spacing: .1em;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+@media(min-height:1200px), (min-width:1000px)  {
+    main {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: 5em;
+        padding-bottom: .5em;
+    }
+
+    .sub_title {
+        font-size: 3em;
+    }
+
+    form {
+        width: 70%;
+        margin: auto;
+    }
+
+    header {
+        height: 450px;
+    }
+
+    input[type='text'], input[type='email'] {
+        font-size: .5em;
+    }
+}
+
+@media(min-width:1700px) {
+    header {
+        height: 600px;
+    }
+}
+
+@media(min-width:2000px) {
+    header {
+        height: 750px;
+    }
+
+    main {
+        font-size: 3em;
+    }
+
+    .title {
+        font-size: 5em;
+        padding-bottom: .5em;
+    }
+
+    .sub_title {
+        font-size: 3em;
+    }
+
+    form {
+        width: 60%;
+        margin: auto;
+    }
+
+    input[type='text'], input[type='email'] {
+        font-size: 1em;
+    }
+
+    input[type='button'] {
+        font-size: 1em;
+    }
 }
